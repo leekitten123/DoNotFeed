@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PigMovement : MonoBehaviour {
 
-    int speed = 10;
+    int speed = 20;
     int rotSpeed = 120;
 
     public GameObject bullet;
@@ -30,6 +30,7 @@ public class PigMovement : MonoBehaviour {
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bullet, spawnPoint.transform.position, transform.rotation);
+            
         }
     }
 }
