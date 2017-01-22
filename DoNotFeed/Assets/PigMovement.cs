@@ -26,7 +26,7 @@ public class PigMovement : MonoBehaviour {
 
         transform.Translate(Vector3.right * front * toMove);
         transform.Rotate(new Vector3(0, ang * toRotate, 0));
-
+       
         if (Input.GetKeyDown(KeyCode.Space))
         {
             Instantiate(bullet, spawnPoint.transform.position, transform.rotation);
