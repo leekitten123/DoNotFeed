@@ -75,12 +75,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Script\BulletMove.cs" />
-    <Compile Include="Assets\Script\CameraMovement.cs" />
-    <Compile Include="Assets\Script\Obstacle.cs" />
-    <Compile Include="Assets\Script\PigMovement.cs" />
-    <Compile Include="Assets\Script\StartManager.cs" />
-    <Compile Include="Assets\Script\TransparentWall.cs" />
+    <Compile Include="Assets\Scripts\BulletMove.cs" />
+    <Compile Include="Assets\Scripts\CameraMovement.cs" />
+    <Compile Include="Assets\Scripts\Obstacle.cs" />
+    <Compile Include="Assets\Scripts\PigMovement.cs" />
+    <Compile Include="Assets\Scripts\StartManager.cs" />
+    <Compile Include="Assets\Scripts\TransparentWall.cs" />
+    <Compile Include="Assets\Scripts\VirtualJoystick.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
