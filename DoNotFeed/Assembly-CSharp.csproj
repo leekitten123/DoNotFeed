@@ -46,10 +46,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\BulletMove.cs" />
+     <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Obstacle.cs" />
-     <Compile Include="Assets\Scripts\PigMovement.cs" />
+     <Compile Include="Assets\Scripts\Pig.cs" />
      <Compile Include="Assets\Scripts\StartManager.cs" />
      <Compile Include="Assets\Scripts\TransparentWall.cs" />
      <Compile Include="Assets\Scripts\VirtualJoystick.cs" />

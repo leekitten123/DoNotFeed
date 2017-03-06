@@ -4,16 +4,13 @@ using UnityEngine;
 
 public class StartManager : MonoBehaviour {
 
-    // Use this for initialization
     void Start()
     {
 
     }
-
-    // Update is called once per frame
+		
     void Update()
     {
-
         //** 안드로이드 일 경우 뒤로가기 버튼 클릭시 어플리케이션 종료한다??? **/
         if (Application.platform == RuntimePlatform.Android)
         {

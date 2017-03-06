@@ -7,7 +7,7 @@ public class CameraMovement : MonoBehaviour {
     public Transform target;
     public float smoothing = 5f;
 
-    Vector3 offset;
+    private Vector3 offset;
 
 	void Start () {
         offset = transform.position - target.position;
