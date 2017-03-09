@@ -49,12 +49,17 @@
      <Compile Include="Assets\Scripts\Bullet.cs" />
      <Compile Include="Assets\Scripts\CameraMovement.cs" />
      <Compile Include="Assets\Scripts\Enemy.cs" />
-     <Compile Include="Assets\Scripts\EnemyCandy.cs" />
-     <Compile Include="Assets\Scripts\Obstacle.cs" />
+     <Compile Include="Assets\Scripts\EnemyBlue.cs" />
+     <Compile Include="Assets\Scripts\EnemyGreen.cs" />
+     <Compile Include="Assets\Scripts\EnemyOrange.cs" />
+     <Compile Include="Assets\Scripts\EnemyRed.cs" />
+     <Compile Include="Assets\Scripts\EnemyZone.cs" />
+     <Compile Include="Assets\Scripts\GameManager.cs" />
      <Compile Include="Assets\Scripts\Pig.cs" />
+     <Compile Include="Assets\Scripts\StageManager.cs" />
      <Compile Include="Assets\Scripts\StartManager.cs" />
-     <Compile Include="Assets\Scripts\TransparentWall.cs" />
      <Compile Include="Assets\Scripts\VirtualJoystick.cs" />
+     <Compile Include="Assets\Scripts\Wall.cs" />
  <Reference Include="UnityEngine.Analytics">
  <HintPath>/Applications/Unity/Unity.app/Contents/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>

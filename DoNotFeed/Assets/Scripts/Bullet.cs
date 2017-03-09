@@ -6,8 +6,11 @@ public class Bullet : MonoBehaviour {
 
     public int speedMove = 100;
 
+	public StageManager stageManager;
+
 	void Start () {
 		
+		stageManager = GameObject.Find ("StageManager").GetComponent<StageManager> ();
 	}
 		
 	void Update () {
@@ -16,15 +19,14 @@ public class Bullet : MonoBehaviour {
 	}
 
     private void OnTriggerEnter(Collider other) {
-
-        if (other.gameObject.tag == "TransparentWall") {
-			
-            Destroy(gameObject);
-        }
-
+		
 		if (other.gameObject.tag == "Enemy") {
 			
-            Destroy(other.gameObject);
+			Destroy(other.gameObject);
+			Destroy (gameObject);
+
+			stageManager.setCountKill(stageManager.getCountKill () + 1);
         }
     }
+
 }

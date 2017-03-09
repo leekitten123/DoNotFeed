@@ -4,12 +4,35 @@ using UnityEngine;
 
 public class Enemy : MonoBehaviour {
 	
-	protected float speedMove;
-	protected Vector3 targetVector;
+	private float speedMove;
+	private Vector3 targetVector;
 
-	public void setSpeedMove (float speedMove) { this.speedMove = speedMove; }
-	public void setTargetVector (Vector3 targetVector) { this.targetVector = targetVector; }
+	protected void setSpeedMove (float speedMove) { this.speedMove = speedMove; }
+	protected void setTargetVector (Vector3 targetVector) { this.targetVector = targetVector; }
 
 	public float getSpeedMove () { return this.speedMove; }
 	public Vector3 getTargetVector () { return targetVector; }
+
+	protected void move () {
+
+		setTargetVector(GameObject.Find("Pig").transform.position);
+
+		transform.position = Vector3.MoveTowards(transform.position, getTargetVector(), getSpeedMove());
+
+		transform.Rotate(new Vector3(0, 0, 5));
+	}
+
+	private void OnTriggerEnter (Collider other) {
+
+		//Debug.Log (other.gameObject.name);
+        if (other.gameObject.name == "Pig") {
+			
+            Application.LoadLevel("Start");
+        }
+
+		if (other.gameObject.name == "Bullet") {
+
+			Destroy (this.gameObject);
+		}
+    }
 }
